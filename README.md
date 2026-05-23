@@ -1,6 +1,6 @@
-# Projeto de Aprendizado em C
+# Lógica de Programação com C
 
-Este repositório reúne meus exercícios e exemplos práticos enquanto estou aprendendo a linguagem C.
+Este repositório reúne meus exercícios e exemplos práticos enquanto estou aprendendo lógica de programação com a linguagem C.
 
 ## Objetivo
 
@@ -13,6 +13,7 @@ Registrar o meu progresso em:
 - Estruturas de decisão
 - Estruturas de repetição
 - Controle de fluxo
+- Resolução de exercícios de lógica
 
 ## Estrutura
 
