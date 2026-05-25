@@ -11,3 +11,8 @@ int main() {
 
     return 0;
 }
+
+// Só interrompe o loop onde ele está diretamente contido.
+// Se você tiver um loop dentro de outro (loop aninhado), 
+// o break dentro do loop interno sairá apenas dele, e o 
+// loop externo continuará rodando normalmente.

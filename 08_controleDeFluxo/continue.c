@@ -11,3 +11,7 @@ int main() {
 
     return 0;
 }
+
+// O continue é usado para pular a iteração atual de um loop e continuar com a próxima iteração.
+// Assim como o break, o continue também só afeta o loop onde ele está diretamente contido. 
+
