@@ -12,6 +12,7 @@ int main() {
 
     // 1. strcpy: Copia "João" para novoNome
     strcpy(novoNome, nome);
+    printf("Primeiro nome: %s\n", novoNome);
 
     // 1. strncpy: Copia no máximo (sizeof(novoNome) - 1) para garantir espaço para o '\0'
     //strncpy(novoNome, nome, size of(novoNome) - 1);
