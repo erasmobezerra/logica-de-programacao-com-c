@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "poligonos.h"
 
-// Comando no CMD para compilar o main e o poligonos.c e executa o main
+// Comando no CMD para compilar o main.c e o poligonos.c e executa o main
 // > gcc main.c poligonos.c -o main && ./main
 int main() {
     
