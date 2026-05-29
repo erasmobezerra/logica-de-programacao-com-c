@@ -15,9 +15,10 @@ struct tipo_pessoa{
 };
 
 // Definindo um tipo de dado personalizado usando typedef para facilitar a declaração de variáveis do tipo struct
+// Caso contrário, seria necessário declarar variáveis do tipo "struct tipo_pessoa" em vez de apenas "tipo_pessoa"
 typedef struct tipo_pessoa tipo_pessoa;
 
-// Função para limpar o buffer do teclado
+// Função para limpar o buffer do teclado, evitando problemas com a leitura de strings após a leitura de outros tipos de dados
 void clearBuffer() {
     int c;
     while ((c = getchar()) != '\n' && c != EOF);
