@@ -6,5 +6,8 @@
 int main() {
     
     printf("Area do triangulo: %f\n", areaTriangulo(10, 5));
+    printf("Area do circulo: %f\n", areaCirculo(5));
+    printf("Area do retangulo: %f\n", areaRetangulo(10, 5));
+    printf("Area do log: %f\n", areaLosango(10, 5));
     return 0;
 }
