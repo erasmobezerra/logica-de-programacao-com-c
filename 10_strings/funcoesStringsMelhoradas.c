@@ -10,22 +10,19 @@ int main() {
     char sobrenome[] = " Silva";
     char novoNome[30];
 
-    // 1. strcpy: Copia "João" para novoNome
-    // strcpy -> copia o conteúdo de uma string para outra. 
-    strcpy(novoNome, nome);
-    printf("Primeiro nome: %s\n", novoNome);
+    //1. strncpy: copia o conteúdo de uma string para outra, garantindo que nao ultrapasse o limite restante do buffer
+    // sizeof -> mede a memória total alocada em bytes de uma variável 
+    strncpy(novoNome, nome, sizeof(novoNome) - 1);
+    novoNome[sizeof(novoNome) - 1] = '\0'; // Garantia extra do terminador nulo
 
-    // 2. strcat: Junta " Silva" ao final de novoNome
-    // strcat -> concatena uma string com a outra
-    strcat(novoNome, sobrenome);
-    printf("Nome completo: %s\n", novoNome);
+    // 2. strncat: Concatena uma string com a outra, garantindo que não ultrapasse o limite restante do buffer
+    // strlen -> conta a quantidade de caracteres válidos em uma string até o o terminador nulo  '\0'
+    strncat(novoNome, sobrenome, sizeof(novoNome) - strlen(novoNome) - 1);
 
     // 3. strlen: Calcula o tamanho do nome completo
-    // strlen -> conta a quantidade de caracteres válidos em uma string até o o terminador nulo  '\0'
     printf("O tamanho do nome completo é: %zu caracteres.\n", strlen(novoNome));
 
     // 4. strcmp: Compara se o nome é igual a "João Silva"
-    // strcmp -> compara duas strings e retorna 0 se forem iguais
     if (strcmp(novoNome, "João Silva") == 0) {
         printf("Verificação: O nome está correto!\n");
     } else {
